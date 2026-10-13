@@ -27,14 +27,11 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Render Quarto sources
         uses: quarto-dev/quarto-actions/render@v2
-      - name: Assemble static shell
-        run: |
-          cp index.html styles.css script.js _site/
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
-      - name: Upload site artifact
+      - name: Upload Quarto site
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
