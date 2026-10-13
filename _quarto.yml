@@ -1,19 +1,24 @@
 project:
   type: website
   output-dir: _site
+
 website:
   title: "Quant Research Notes"
-  description: "한국어 논문 리뷰와 구현 실험 노트"
+  description: "한국어 기술 노트와 논문 리뷰"
   navbar:
     left:
-      - href: index.html
+      - href: index.qmd
         text: 홈
-      - href: about.html
+      - href: about.qmd
         text: About
-      - href: posts/review-template.html
+      - href: posts/review-template.md
         text: 리뷰 템플릿
+  page-navigation: true
+
 format:
   html:
     theme: none
+    css: site.css
     toc: true
     html-math-method: mathjax
+    smooth-scroll: true
