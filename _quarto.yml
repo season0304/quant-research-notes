@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: _site
+website:
+  title: "Quant Research Notes"
+  description: "한국어 논문 리뷰와 구현 실험 노트"
+  navbar:
+    left:
+      - href: index.html
+        text: 홈
+      - href: about.html
+        text: About
+      - href: posts/review-template.html
+        text: 리뷰 템플릿
+format:
+  html:
+    theme: none
+    toc: true
+    html-math-method: mathjax
