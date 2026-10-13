@@ -7,6 +7,7 @@ listing:
   type: default
   sort: "date desc"
   fields: [title, date, description, categories]
+  categories: true
   filter-ui: [search, categories]
   sort-ui: false
   page-size: 20
