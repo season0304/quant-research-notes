@@ -1,0 +1,29 @@
+/* restrained, readable blog theme */
+:root{--ink:#20262d;--muted:#6e7781;--line:#e5e8eb;--paper:#fff;--accent:#315f7d;--accent-soft:#eef4f7}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-size:16px;line-height:1.8}
+a{color:var(--accent)}
+#quarto-header{border-bottom:1px solid var(--line);background:#fff}
+.navbar{max-width:960px;margin:0 auto;padding:0 20px;min-height:64px}
+.navbar-brand{font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.navbar-nav .nav-link{color:var(--muted);font-size:.94rem}
+.navbar-nav .nav-link:hover{color:var(--accent)}
+main.content{max-width:860px;margin:0 auto;padding:58px 24px 76px}
+.quarto-title-block{margin-bottom:42px}
+.quarto-title h1{font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:500;letter-spacing:-.055em;line-height:1.18;margin-bottom:12px}
+.quarto-title .subtitle{color:var(--muted);font-size:1.08rem}
+.quarto-listing{margin-top:18px}
+.quarto-listing .listing-actions{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:8px}
+.quarto-listing .listing-actions .form-control,.quarto-listing .listing-actions .form-select{border:1px solid var(--line);border-radius:4px;box-shadow:none;font-size:.9rem}
+.quarto-listing-default .quarto-post{padding:22px 0;border-bottom:1px solid var(--line)}
+.quarto-listing-default .listing-title{font-family:Georgia,"Noto Serif KR",serif;font-size:1.35rem;line-height:1.35;margin:0 0 5px}
+.quarto-listing-default .listing-title a{text-decoration:none;color:var(--ink)}
+.quarto-listing-default .listing-title a:hover{color:var(--accent)}
+.quarto-listing-default .listing-description{color:var(--muted);font-size:.95rem;margin:4px 0 8px}
+.quarto-listing-default .listing-date{color:var(--muted);font-size:.82rem}
+.quarto-listing-default .listing-category{display:inline-block;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:1px 7px;margin-right:5px;font-size:.76rem}
+.quarto-title-meta{color:var(--muted);font-size:.86rem}
+blockquote{border-left:3px solid var(--accent);background:var(--accent-soft);padding:10px 16px;color:#3f5666}
+code{font-size:.9em}
+footer.footer{max-width:860px;margin:0 auto;padding:24px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+@media(max-width:720px){body{font-size:15px}.navbar{padding:0 14px}.navbar-brand{font-size:.95rem}.navbar-nav .nav-link{font-size:.84rem;padding-left:8px;padding-right:8px}main.content{padding:40px 18px 56px}.quarto-title h1{font-size:2.35rem}.quarto-listing-default .quarto-post{padding:18px 0}.quarto-listing-default .listing-title{font-size:1.18rem}.quarto-listing .listing-actions{display:block}.quarto-listing .listing-actions>*{margin-bottom:8px}}
